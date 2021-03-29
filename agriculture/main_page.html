@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID LAYOUT</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+            
+        }
+         
+        .container{
+            margin-left: 50px;
+            
+            display: grid;
+            grid-gap: 0;
+            height: 600px;
+            width: 1250px;
+            grid-template-areas: 
+            
+            'sbox1 sbox2 sbox3 '
+            'sbox4 sbox5 sbox6 '
+            'sbox7 sbox8 sbox9 '
+            'footer footer footer';
+
+            
+            
+        }
+        .item{
+            background-color:yellow;
+            color:black;
+            border: 1px solid black;
+            text-align: center;
+            font-weight: bolder;
+            vertical-align: middle;
+            padding: 1px;
+            
+            
+        }
+        .small{
+            background-color:green;
+            height: 180px;
+            width : 400px;
+            
+        }
+         
+        #sbox1{
+            grid-area: sbox1;
+            margin-top: 30px;
+            
+        }
+        #sbox2{
+            grid-area: sbox2;
+            margin-top: 30px;
+            
+        
+        }
+        #sbox3{
+            grid-area: sbox3;
+            margin-top: 30px;
+            
+            
+        }
+         
+        #footer{
+            grid-area: footer;
+            height: 40px;
+            background-color:rgb(51, 202, 31);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bigc">
+    <div class="container">
+         
+        <div id="sbox1"  class="item small"><a href="node1.html">Node 1</a></div>
+        <div id="sbox2" class="item small"><a href="node2.html">Node 2</a></div>
+        <div id="sbox3" class="item small"><a href="node3.html">Node 3</a></div>
+        <div id="sbox4"  class="item small"><a href="node4.html">Node 4</a></div>
+        <div id="sbox5" class="item small"><a href="node5.html">Node 5</a></div>
+        <div id="sbox6" class="item small"><a href="node6.html">Node 6</a></div>
+        <div id="sbox7"  class="item small"><a href="node7.html">Node 7</a></div>
+        <div id="sbox8" class="item small"><a href="node8.html">Node 8</a></div>
+        <div id="sbox9" class="item small"><a href="node9.html">Node 9</a></div>
+        <div id="footer" class="item">Agriculture Land</div>
+         
+         
+    
+        
+    </div>
+</div>
+    
+</body>
+</html>
